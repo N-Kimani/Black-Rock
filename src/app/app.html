@@ -17,3 +17,11 @@ We would also like to ask our clients about feedback they have for us and we hav
 <p class = "mt-10 mx-10 me-135">
 As part of our Consumer Duty feedback process we would also invite Distributors to complete the Distributor Feedback Template and instructions on how to do this can be found below.
 </p>
+<button class=" mt-10 mx-10"type="button" (click)="printNathan()">Please click here</button><br>
+<hr>
+
+  <label for="firstname">First Name: </label><br>
+  <input type="text" id="firstname" name="firstname" [(ngModel)]="firstName"><br>
+  <label for="lastname">Last Name: </label><br>
+  <input type="text" id="lastname" name="lastname" [(ngModel)]="lastName"><br>
+  <input type="submit" value="Submit" (click)="displayNames()">
